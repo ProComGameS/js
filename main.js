@@ -1,3 +1,5 @@
+"use strict";
+
 console.log('#1. Приклад JavaScript')
 
 /*
@@ -12,11 +14,11 @@ console.log('#1. Приклад JavaScript')
 // ім'я змінної: myArr, значення: 1, 2, 3, 4, 5
 // ім'я змінної myObj, значення: first: 'First Name', last: 'Last Name'
 
- myNum = 10;
- MyStr = 'some string';
- myBool = true;
- MyArr = ['1', '2', '3','4','5'];
- MyObj = {
+ let myNum = 10;
+ let myStr = 'some string';
+ let myBool = true;
+ let myArr = ['1', '2', '3','4','5'];
+ let myObj = {
      firstName: 'First name',
      lastName: 'Last name',
 }
@@ -45,7 +47,7 @@ console.log(decimal2);
 
 // i
 
-i = null;
+let i = 0;
 
 i++;
 console.log(i);
@@ -68,22 +70,22 @@ console.log(++i);
  */
 
 // myTest
-MyTest = 20;
+let myTest = 20;
 // +=
-MyTest += 1;
-console.log(MyTest);
+ myTest += 1;
+console.log(myTest);
 // –=
-MyTest -= 2;
-console.log(MyTest);
+ myTest -= 2;
+console.log(myTest);
 // *=
-MyTest *= 5;
-console.log(MyTest);
+ myTest *= 5;
+console.log(myTest);
 // /=
-MyTest /= 2;
-console.log(MyTest);
+ myTest /= 2;
+console.log(myTest);
 // %=
-MyTest %= 5;
-console.log(MyTest);
+ myTest %= 5;
+console.log(myTest);
 
 /*
  * #5
@@ -93,25 +95,25 @@ console.log(MyTest);
 
 // константа Pi → myPi
 
-MyPi = Math.PI;
-console.log(MyPi);
+let myPi = Math.PI;
+console.log(myPi)
 
 // округлене значення числа 89.279 → myRound
 
-MyRound = 89.279;
-MyRound = Math.round(MyRound * 10) / 10;
-console.log(MyRound);
+let myRound = 89.279;
+myRound = Math.round(myRound * 10) / 10;
+console.log(myRound);
 
 // випадкове число між 0..10 → myRandom
 
-MyRandom = Math.floor(Math.random()*10);
-console.log(MyRandom);
+let myRandom = Math.floor(Math.random()*10);
+console.log(myRandom)
 
 // 3 у 5 степені → myPow
 
-MyPow = null;
-MyPow = Math.pow(3, 5);
-console.log(MyPow);
+let myPow = null;
+myPow = Math.pow(3, 5);
+console.log(myPow);
 
 
 
@@ -143,9 +145,9 @@ let strObj = {
 // isRamaPos
 // isRama
 
-isRama = null;
-isRamaPos = null;
-searchwrd = "рама";
+let isRama = null;
+let isRamaPos = null;
+let searchwrd = "рама";
 
 if (strObj.str.indexOf(searchwrd) !== -1) {
     let isRama = true;
@@ -184,9 +186,9 @@ console.log(strReplace);
 // var lowerStr
 
 
-let SomeStr = 'some STRING';
+let someStr = 'some STRING';
 
-let upperText = SomeStr.toUpperCase();
+let upperText = someStr.toUpperCase();
 console.log(upperText);
 
 let lowerText = upperText.toLowerCase();
