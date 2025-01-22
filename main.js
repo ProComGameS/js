@@ -106,7 +106,7 @@ console.log(myRound);
 
 // випадкове число між 0..10 → myRandom
 
-let myRandom = Math.floor(Math.random()*10);
+let myRandom = Math.floor(Math.random()*11);
 console.log(myRandom)
 
 // 3 у 5 степені → myPow
@@ -145,19 +145,17 @@ let strObj = {
 // isRamaPos
 // isRama
 
-let isRama = null;
-let isRamaPos = null;
-let searchwrd = "рама";
 
-if (strObj.str.indexOf(searchwrd) !== -1) {
-    let isRama = true;
-    isRamaPos = strObj.str.indexOf(searchwrd);
+const searchwrd = "рама";
+const isRamaPos = strObj.str.indexOf(searchwrd);
+const isRama = strObj.str.includes(searchwrd);
+
+if (isRama) {
     console.log(isRama + isRamaPos);
+} else {
+    console.log(isRama);
 }
- else {
-     let isRama = false;
-     console.log(isRama);
-}
+
 
 
 /*
